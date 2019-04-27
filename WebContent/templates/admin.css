@@ -1,0 +1,237 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Top menu*/
+.admin_header{
+  position: fixed;
+  width: 100%;
+  height : 50px;
+  margin-left: 250px;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  background-color: white;
+}
+
+/* Style the side navigation */
+.admin_sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(53, 51, 51);
+  overflow-x: hidden;
+}
+
+/* Side navigation links */
+.admin_sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.admin_sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*Hide Show*/
+
+/*Dropdown sidebar*/
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.admin_footer{
+  background-color: black;
+  color: white;
+  height: 50px;
+  text-align: center;
+  margin-bottom: 0;
+}
+/* Style the content */
+.admin_content {
+  height: 100%;
+  margin-top:50px;
+  margin-left: 250px;
+  background-color: whitesmoke;
+}
+
+/*Table*/
+.tableDashboard {
+  border: none;
+  padding: 20px;
+  height: 100%;
+}
+.thDashboard {
+  width: 25%;
+  height: 200px;
+  border-style: hidden;
+}
+.tableDash {
+  width:100%;
+  margin-top: 50px;
+  border-spacing: 15px;
+  border-style: none;
+}
+
+.th1{
+  background-color: rgb(226, 131, 124)
+}
+.th2{
+  background-color: rgb(102, 206, 171)
+}
+.th3{
+  background-color: rgb(184, 190, 93)
+}
+.th4{
+  background-color: rgb(20, 172, 121)
+}
+
+.weather {
+  height: 400px;
+  background-color: aqua;
+}
+
+
+/*Button Add*/
+.btnAdd{
+  float: right;
+}
+
+
+
+
+/*Quan ly ngon ngu lap trinh*/
+.divLink{
+  background-color: white;
+  height: 50px;
+  width: 100%;
+}
+.divTable{
+  margin-top: 0;
+}
+.divTableChild{
+  width: 100%;
+  padding: 100px;
+}
+#tableNGLL {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tableNGLL td, #tableNGLL th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tableNGLL tr:nth-child(even){background-color: #f2f2f2;}
+
+#tableNGLL tr:hover {background-color: #ddd;}
+
+#tableNGLL th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.tableNGLLPagination{
+  float: right;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+/*Breadcrumb*/
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+/*Modal ADD*/
+ /* The Modal (background) */
+ .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
