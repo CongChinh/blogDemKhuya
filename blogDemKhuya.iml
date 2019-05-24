@@ -40,6 +40,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v9.0" level="application" />
-    <orderEntry type="jdk" jdkName="java-11-openjdk-amd64" jdkType="JavaSDK" />
+    <orderEntry type="inheritedJdk" />
   </component>
 </module>

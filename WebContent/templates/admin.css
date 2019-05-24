@@ -30,33 +30,50 @@ body {
   left: 0;
   background-color: rgb(53, 51, 51);
   overflow-x: hidden;
+  padding-top: 20px;
 }
 
 /* Side navigation links */
-.admin_sidenav a {
-  color: white;
-  padding: 16px;
+.admin_sidenav a, .admin_dropdown-btn {
+  padding: 6px 8px 6px 16px;
   text-decoration: none;
+  font-size: 20px;
+  color: #818181;
   display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
 }
 
 /* Change color on hover */
-.admin_sidenav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/*Hide Show*/
-
-/*Dropdown sidebar*/
-.dropbtn {
-  background-color: #4CAF50;
+.admin_sidenav a:hover, .admin_dropdown-btn:hover {
   color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
 }
+.active {
+  background-color: green;
+  color: white;
+}
+.admin_dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
 
 
 .admin_footer{

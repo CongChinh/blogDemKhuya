@@ -1,20 +1,49 @@
 <%@ page pageEncoding="utf-8"%>
 <div class="admin_sidenav">
 	<a href="${pageContext.request.contextPath}/admin">Dashboard</a>
-	<a href="#" class="userManager">Quản lý người dùng</a>
-	<ul class="hideShow" style="color:white">
-		<li><a href="#">Add</a></li>
-		<li><a href="#">Update</a></li>
-		<li><a href="#">Delete</a></li>
-	</ul>
+	<a href="#">Quản lý người dùng</a>
+	<button class="admin_dropdown-btn">Dropdown 
+    	<i class="fa fa-caret-down"></i>
+  	</button>
+  	<div class="admin_dropdown-container">
+	    <a href="#">Link 1</a>
+	    <a href="#">Link 2</a>
+	    <a href="#">Link 3</a>
+  	</div>
+  	
 	<a href="${pageContext.request.contextPath}/admin/subjectList">Chủ đề</a>
-	<a href="">Âm nhạc</a>
+	
+	<button class="admin_dropdown-btn">Âm nhạc 
+    	<i class="fa fa-caret-down"></i>
+  	</button>
+  	<div class="admin_dropdown-container">
+	    <a href="${pageContext.request.contextPath}/admin/musicUpload">Thêm nhạc</a>
+	    <a href="${pageContext.request.contextPath}/admin/musicList">Danh sách nhạc</a>
+  	</div>
+	
+	
+	<button class="admin_dropdown-btn">Ảnh 
+    	<i class="fa fa-caret-down"></i>
+  	</button>
+  	<div class="admin_dropdown-container">
+	    <a href="${pageContext.request.contextPath}/admin/imageUpload">Thêm ảnh</a>
+	    <a href="${pageContext.request.contextPath}/admin/imageList">Danh sách ảnh</a>
+  	</div>
+	
 	<script>
-		$(document).ready(function () {
-			$(".hideShow").hide();
-			$(".userManager").click(function () {
-				$(".hideShow").toggle(500);
-			});
-		});
+		var dropdown = document.getElementsByClassName("admin_dropdown-btn");
+		var i;
+	
+		for (i = 0; i < dropdown.length; i++) {
+		  dropdown[i].addEventListener("click", function() {
+		  	this.classList.toggle("active");
+		  	var dropdownContent = this.nextElementSibling;
+		  	if (dropdownContent.style.display === "block") {
+		  		dropdownContent.style.display = "none";
+		  	} else {
+		  		dropdownContent.style.display = "block";
+		  	}
+		  });
+		}
 	</script>
 </div>

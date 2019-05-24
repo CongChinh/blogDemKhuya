@@ -14,7 +14,8 @@
 			<tr>
 				<th>CSS</th>
 				<th colspan="3" class="weather">
-					<img src="${pageContext.request.contextPath}/templates/images/beautifulGirl.jpg" alt="" width="100px" height="100px">
+					<img src="<%=request.getContextPath()%>/templates/images/beautifulGirl.jpg" alt="" width="500px" height="500px">
+					<img src="Downloads/windows-10.jpg" alt="" width="100px" height="100px">
 				</th>
 			</tr>
 		</table>
